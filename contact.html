@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Rentivo</title>
+<meta name="description" content="Get in touch with the Rentivo team — WhatsApp, email, or the contact form. We usually reply within a business day.">
+<link rel="canonical" href="https://www.rentivo.example.com/contact.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/icons/rentivo-logo.png" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<style>
+  .page-hero { padding: 72px 0 40px; text-align: center; }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
+  .field { margin-bottom: 18px; }
+  .field label { display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+  .field input, .field textarea {
+    width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid var(--line);
+    background: var(--mist); color: var(--ink); font-family: var(--font-body); font-size: 14px; min-height: 48px;
+  }
+  .field textarea { min-height: 120px; resize: vertical; }
+  .contact-tile { display: flex; align-items: center; gap: 14px; padding: 18px; margin-bottom: 14px; }
+  .contact-tile .ic { width: 42px; height: 42px; border-radius: 12px; background: var(--gradient-brand-soft); display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+  .map-box { height: 200px; border-radius: var(--radius-md); background: repeating-linear-gradient(45deg, var(--mist), var(--mist) 10px, var(--mist-2) 10px, var(--mist-2) 20px); display: flex; align-items: center; justify-content: center; color: var(--ink-soft); font-size: 13px; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<section class="page-hero wrap">
+  <span class="eyebrow reveal in">Contact</span>
+  <h1 class="reveal in" style="font-size:clamp(32px,5vw,46px);">Let's talk</h1>
+  <p class="reveal in" style="max-width:480px;margin:16px auto 0;">Questions, a demo request, or just want to say hi — we read every message.</p>
+</section>
+
+<section class="wrap section" style="padding-top:0;">
+  <div class="contact-grid">
+    <div class="card reveal">
+      <h2 style="font-size:19px;margin-bottom:20px;">Send us a message</h2>
+      <form onsubmit="event.preventDefault(); this.reset(); document.getElementById('formOk').style.display='block';">
+        <div class="field"><label>Full name</label><input type="text" required></div>
+        <div class="field"><label>Email</label><input type="email" required></div>
+        <div class="field"><label>Phone (optional)</label><input type="tel"></div>
+        <div class="field"><label>Message</label><textarea required placeholder="Tell us about your property / question"></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;">Send Message</button>
+        <p id="formOk" style="display:none;color:#16a34a;font-size:13.5px;margin-top:12px;">✓ Thanks — we'll get back to you within a business day.</p>
+      </form>
+    </div>
+    <div class="reveal">
+      <div class="card contact-tile"><div class="ic">💬</div><div><div style="font-weight:600;font-size:14.5px;">WhatsApp</div><div style="font-size:13px;color:var(--ink-soft);">+91 90000 00000</div></div></div>
+      <div class="card contact-tile"><div class="ic">✉️</div><div><div style="font-weight:600;font-size:14.5px;">Email</div><div style="font-size:13px;color:var(--ink-soft);">hello@rentivo.example.com</div></div></div>
+      <div class="card contact-tile"><div class="ic">🕒</div><div><div style="font-weight:600;font-size:14.5px;">Business Hours</div><div style="font-size:13px;color:var(--ink-soft);">Mon–Sat, 10am – 7pm IST</div></div></div>
+      <div class="map-box">Google Maps embed placeholder</div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="/js/site.js"></script>
+</body>
+</html>

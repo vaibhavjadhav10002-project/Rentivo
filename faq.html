@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ — Rentivo</title>
+<meta name="description" content="Answers to common questions about Rentivo — pricing, setup, tenant onboarding, payments, and the Android app.">
+<link rel="canonical" href="https://www.rentivo.example.com/faq.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/icons/rentivo-logo.png" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<style>
+  .page-hero { padding: 72px 0 40px; text-align: center; }
+  .faq-item { border-bottom: 1px solid var(--line); padding: 22px 0; cursor: pointer; }
+  .faq-q { display: flex; justify-content: space-between; align-items: center; font-weight: 600; font-size: 16px; }
+  .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s var(--ease); font-size: 14.5px; }
+  .faq-item.open .faq-a { max-height: 300px; margin-top: 12px; }
+  .faq-plus { transition: transform 0.3s var(--ease); font-size: 20px; color: var(--brand-purple); }
+  .faq-item.open .faq-plus { transform: rotate(45deg); }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<section class="page-hero wrap">
+  <span class="eyebrow reveal in">FAQ</span>
+  <h1 class="reveal in" style="font-size:clamp(32px,5vw,46px);">Frequently asked questions</h1>
+</section>
+
+<section class="wrap section" style="padding-top:0;max-width:760px;">
+  <div class="reveal">
+    <div class="faq-item">
+      <div class="faq-q">Is Rentivo free to use? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Yes — the Starter plan is free for a single property with up to 15 tenants. Paid plans unlock unlimited properties and advanced features.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do I need to install the Android app, or can I just use the browser? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Either works. Rentivo runs as a full installable PWA in any modern browser, or as a native Android app with the same features and push notifications.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do tenants get added to my property? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>You send an invite from the Owner Dashboard. The tenant sets a password, completes their own profile, and you approve it — no manual data entry on your end.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How does rent collection work? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Tenants pay via QR code or your preferred UPI method, and payments are recorded with a reference number against their ledger automatically.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Is my data secure? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Every property's data is isolated at the database level — an owner can only ever see their own properties and tenants, enforced by row-level security, not just app-level checks.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can I manage more than one PG or property? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Yes — Rentivo is built multi-property from the ground up. Switch between properties from a single account.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What happens if I lose internet connection? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Core actions like visitor and parcel logging keep working offline and sync automatically once you're back online. Other actions will let you know if a connection is needed.</p></div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">How do I get support? <span class="faq-plus">+</span></div>
+      <div class="faq-a"><p>Visit the <a href="/help-center.html" style="color:var(--brand-purple);font-weight:600;">Help Center</a> or reach us directly from the <a href="/contact.html" style="color:var(--brand-purple);font-weight:600;">Contact page</a>.</p></div>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="/js/site.js"></script>
+<script>
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => item.classList.toggle('open'));
+});
+</script>
+</body>
+</html>

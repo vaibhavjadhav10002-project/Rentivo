@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pricing — Rentivo</title>
+<meta name="description" content="Simple, transparent pricing for Rentivo — Starter, Professional and Enterprise plans for PG and property owners of every size.">
+<link rel="canonical" href="https://www.rentivo.example.com/pricing.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/icons/rentivo-logo.png" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<style>
+  .page-hero { padding: 72px 0 40px; text-align: center; }
+  .toggle-wrap { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 32px 0 48px; }
+  .toggle { width: 52px; height: 30px; background: var(--mist-2); border-radius: 999px; position: relative; cursor: pointer; border: 1px solid var(--line); }
+  .toggle-dot { width: 24px; height: 24px; background: var(--gradient-brand); border-radius: 50%; position: absolute; top: 2px; left: 2px; transition: transform 0.25s var(--ease); }
+  .toggle.yearly .toggle-dot { transform: translateX(22px); }
+  .save-badge { font-size: 11px; font-family: var(--font-mono); background: var(--gradient-brand-soft); color: var(--brand-purple); padding: 4px 10px; border-radius: 999px; }
+  .plan { padding: 32px; position: relative; }
+  .plan.featured { border: 1.5px solid var(--brand-purple); box-shadow: var(--shadow-glow); }
+  .plan-badge { position: absolute; top: -13px; left: 50%; transform: translateX(-50%); background: var(--gradient-brand); color: #fff; font-size: 11px; font-weight: 600; padding: 5px 14px; border-radius: 999px; }
+  .price { font-family: var(--font-display); font-size: 40px; font-weight: 700; margin: 16px 0 4px; }
+  .price span { font-size: 14px; font-weight: 500; color: var(--ink-soft); font-family: var(--font-body); }
+  .plan ul { list-style: none; padding: 0; margin: 24px 0; }
+  .plan li { display: flex; gap: 10px; font-size: 14px; padding: 7px 0; color: var(--ink-soft); }
+  .plan li::before { content: "✓"; color: var(--brand-purple); font-weight: 700; }
+  table.compare { width: 100%; border-collapse: collapse; margin-top: 24px; }
+  table.compare th, table.compare td { padding: 14px 16px; text-align: center; border-bottom: 1px solid var(--line); font-size: 13.5px; }
+  table.compare th:first-child, table.compare td:first-child { text-align: left; color: var(--ink-soft); }
+  table.compare th { font-family: var(--font-display); font-weight: 600; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<section class="page-hero wrap">
+  <span class="eyebrow reveal in">Pricing</span>
+  <h1 class="reveal in" style="font-size:clamp(32px,5vw,48px);">Simple pricing that scales with you</h1>
+  <p class="reveal in" style="max-width:520px;margin:16px auto 0;">Start free. Upgrade only when you're managing enough properties to need it.</p>
+  <div class="toggle-wrap reveal in">
+    <span id="monthlyLabel" style="font-size:14px;font-weight:600;">Monthly</span>
+    <div class="toggle" id="billingToggle"><div class="toggle-dot"></div></div>
+    <span id="yearlyLabel" style="font-size:14px;color:var(--ink-soft);">Yearly</span>
+    <span class="save-badge">Save 20%</span>
+  </div>
+</section>
+
+<section class="wrap section" style="padding-top:0;">
+  <div class="grid-3 reveal">
+    <div class="card plan">
+      <h3 style="font-size:18px;">Starter</h3>
+      <p style="font-size:13px;margin-top:6px;">For a single PG or property just getting organized.</p>
+      <div class="price"><span class="monthly-price">Free</span></div>
+      <ul>
+        <li>1 property</li>
+        <li>Up to 15 tenants</li>
+        <li>Rent collection &amp; QR payments</li>
+        <li>Tenant portal &amp; onboarding</li>
+        <li>Basic reports</li>
+      </ul>
+      <a href="/download.html" class="btn btn-ghost" style="width:100%;">Get Started Free</a>
+    </div>
+    <div class="card plan featured">
+      <span class="plan-badge">Most Popular</span>
+      <h3 style="font-size:18px;">Professional</h3>
+      <p style="font-size:13px;margin-top:6px;">For owners running multiple properties.</p>
+      <div class="price"><span class="monthly-price">₹999</span><span>/property/mo</span></div>
+      <ul>
+        <li>Unlimited properties</li>
+        <li>Unlimited tenants</li>
+        <li>Digital agreements</li>
+        <li>Visitor &amp; parcel management</li>
+        <li>Full reports &amp; analytics</li>
+        <li>Priority notifications</li>
+      </ul>
+      <a href="/contact.html" class="btn btn-primary" style="width:100%;">Start Free Trial</a>
+    </div>
+    <div class="card plan">
+      <h3 style="font-size:18px;">Enterprise</h3>
+      <p style="font-size:13px;margin-top:6px;">For co-living operators &amp; large portfolios.</p>
+      <div class="price"><span style="font-size:26px;">Custom</span></div>
+      <ul>
+        <li>Everything in Professional</li>
+        <li>Dedicated onboarding</li>
+        <li>Custom reporting</li>
+        <li>Priority support &amp; SLA</li>
+        <li>Multi-admin roles</li>
+      </ul>
+      <a href="/contact.html" class="btn btn-ghost" style="width:100%;">Talk to Sales</a>
+    </div>
+  </div>
+
+  <h2 style="text-align:center;margin-top:88px;font-size:clamp(24px,3.4vw,30px);" class="reveal">Compare plans</h2>
+  <div style="overflow-x:auto;" class="reveal">
+    <table class="compare">
+      <thead><tr><th>Feature</th><th>Starter</th><th>Professional</th><th>Enterprise</th></tr></thead>
+      <tbody>
+        <tr><td>Properties</td><td>1</td><td>Unlimited</td><td>Unlimited</td></tr>
+        <tr><td>Tenants</td><td>15</td><td>Unlimited</td><td>Unlimited</td></tr>
+        <tr><td>QR Payments</td><td>✓</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Digital Agreements</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Visitor &amp; Parcel Mgmt</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Advanced Reports</td><td>—</td><td>✓</td><td>✓</td></tr>
+        <tr><td>Priority Support</td><td>—</td><td>—</td><td>✓</td></tr>
+        <tr><td>Custom Onboarding</td><td>—</td><td>—</td><td>✓</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="/js/site.js"></script>
+<script>
+  const toggle = document.getElementById('billingToggle');
+  const monthlyPrices = document.querySelectorAll('.monthly-price');
+  const original = Array.from(monthlyPrices).map(el => el.textContent);
+  toggle.addEventListener('click', () => {
+    toggle.classList.toggle('yearly');
+    const yearly = toggle.classList.contains('yearly');
+    document.getElementById('monthlyLabel').style.color = yearly ? 'var(--ink-soft)' : 'var(--ink)';
+    document.getElementById('monthlyLabel').style.fontWeight = yearly ? 400 : 600;
+    document.getElementById('yearlyLabel').style.color = yearly ? 'var(--ink)' : 'var(--ink-soft)';
+    document.getElementById('yearlyLabel').style.fontWeight = yearly ? 600 : 400;
+    monthlyPrices.forEach((el, i) => {
+      if (original[i] === 'Free' || original[i].startsWith('Custom')) return;
+      el.textContent = yearly ? '₹799' : original[i];
+    });
+  });
+</script>
+</body>
+</html>

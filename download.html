@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Download Rentivo — Android App</title>
+<meta name="description" content="Download the Rentivo Android app. Version, release notes, file size, requirements and step-by-step install instructions.">
+<link rel="canonical" href="https://www.rentivo.example.com/download.html">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" href="/assets/icons/rentivo-logo.png" type="image/png">
+<link rel="manifest" href="/manifest.json">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/tokens.css">
+<style>
+  .page-hero { padding: 72px 0 40px; text-align: center; }
+  .dl-card { padding: 40px; display: grid; grid-template-columns: auto 1fr auto; gap: 32px; align-items: center; }
+  @media (max-width: 760px) { .dl-card { grid-template-columns: 1fr; text-align: center; } }
+  .dl-icon { width: 88px; height: 88px; border-radius: 22px; }
+  .meta-row { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 16px; }
+  .meta-item .k { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-soft); font-family: var(--font-mono); }
+  .meta-item .v { font-size: 15px; font-weight: 600; margin-top: 2px; }
+  .qr-box { width: 128px; height: 128px; border-radius: 16px; background: repeating-conic-gradient(var(--ink) 0% 25%, var(--paper) 0% 50%) 0 0/16px 16px; opacity: 0.85; }
+  .step { display: flex; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .step:last-child { border-bottom: none; }
+  .step-num { width: 30px; height: 30px; border-radius: 50%; background: var(--gradient-brand-soft); color: var(--brand-purple); font-weight: 700; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-family: var(--font-mono); }
+  .store-badge { display: flex; align-items: center; gap: 10px; padding: 14px 20px; border: 1px solid var(--line); border-radius: 14px; opacity: 0.6; }
+</style>
+</head>
+<body>
+<div id="site-header"></div>
+<section class="page-hero wrap">
+  <span class="eyebrow reveal in">Get the app</span>
+  <h1 class="reveal in" style="font-size:clamp(32px,5vw,46px);">Download Rentivo for Android</h1>
+  <p class="reveal in" style="max-width:520px;margin:16px auto 0;">Install directly, or open the Progressive Web App from any browser — no store required.</p>
+</section>
+
+<section class="wrap" style="padding-bottom:32px;">
+  <div class="card glass dl-card reveal in">
+    <img src="/assets/icons/rentivo-logo.png" class="dl-icon" alt="Rentivo app icon">
+    <div>
+      <h2 style="font-size:20px;">Rentivo — PG Management &amp; Property Manager</h2>
+      <div class="meta-row">
+        <div class="meta-item"><div class="k">Version</div><div class="v">1.0.0</div></div>
+        <div class="meta-item"><div class="k">Released</div><div class="v">Coming soon</div></div>
+        <div class="meta-item"><div class="k">Size</div><div class="v">~18 MB</div></div>
+        <div class="meta-item"><div class="k">Requires</div><div class="v">Android 8.0+</div></div>
+      </div>
+      <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap;">
+        <a href="#" class="btn btn-primary">⬇ Download APK</a>
+        <a href="https://app.rentivo.example.com" class="btn btn-ghost">Open Web App instead</a>
+      </div>
+      <p class="mono" style="font-size:11px;margin-top:14px;color:var(--ink-soft);">SHA-256: <span id="sha">GENERATED_AT_RELEASE_BUILD_TIME_PLACEHOLDER</span></p>
+    </div>
+    <div class="qr-box" aria-label="QR code to download the APK"></div>
+  </div>
+</section>
+
+<section class="wrap section" style="padding-top:24px;">
+  <div class="grid-2" style="gap:56px;">
+    <div class="reveal">
+      <h2 style="font-size:22px;margin-bottom:20px;">Installation guide</h2>
+      <div class="step"><div class="step-num">1</div><p style="font-size:14px;">Tap <strong>Download APK</strong> above. Your browser will download the file to your Downloads folder.</p></div>
+      <div class="step"><div class="step-num">2</div><p style="font-size:14px;">Open the downloaded file. If prompted, allow installs from this source in <strong>Settings → Apps → Special access</strong>.</p></div>
+      <div class="step"><div class="step-num">3</div><p style="font-size:14px;">Tap <strong>Install</strong>, then <strong>Open</strong> once it finishes.</p></div>
+      <div class="step"><div class="step-num">4</div><p style="font-size:14px;">Sign in with your existing Rentivo account — the same login as the web app.</p></div>
+    </div>
+    <div class="reveal">
+      <h2 style="font-size:22px;margin-bottom:20px;">Also available on</h2>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="store-badge"><span style="font-size:22px;">▶</span><div><div style="font-weight:600;font-size:14px;">Google Play</div><div style="font-size:12px;color:var(--ink-soft);">Coming soon</div></div></div>
+        <div class="store-badge"><span style="font-size:22px;"></span><div><div style="font-weight:600;font-size:14px;">App Store</div><div style="font-size:12px;color:var(--ink-soft);">Coming soon</div></div></div>
+      </div>
+      <p style="margin-top:24px;font-size:13.5px;">Prefer not to install anything? Rentivo runs as a full <a href="/features.html#pwa" style="color:var(--brand-purple);font-weight:600;">installable PWA</a> straight from your browser — same features, zero download.</p>
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+<script src="/js/site.js"></script>
+</body>
+</html>

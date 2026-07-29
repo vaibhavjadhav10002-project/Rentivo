@@ -1,0 +1,16 @@
+{
+  "name": "Rentivo — Smart PG & Property Management",
+  "short_name": "Rentivo",
+  "description": "Smart PG & Property Management Platform",
+  "start_url": "/index.html",
+  "id": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563EB",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/assets/icons/rentivo-logo.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/assets/icons/rentivo-logo-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
