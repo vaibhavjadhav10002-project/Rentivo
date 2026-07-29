@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240">
+  <defs>
+    <linearGradient id="brand" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="55%" stop-color="#6D5BEF"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <mask id="letterMaskA">
+      <rect x="0" y="0" width="240" height="240" fill="black"/>
+      <g fill="white">
+        <!-- stem -->
+        <rect x="54" y="38" width="40" height="164" rx="6"/>
+        <!-- bowl: smooth outer boundary, rounded top-right & bottom-right -->
+        <path d="
+          M 94 38
+          L 148 38
+          A 40 40 0 0 1 188 78
+          L 188 86
+          A 40 40 0 0 1 148 126
+          L 94 126
+          Z
+        "/>
+        <!-- leg -->
+        <path d="
+          M 94 126
+          L 132 126
+          L 202 202
+          L 160 202
+          Z
+        "/>
+      </g>
+      <!-- counter: house-shaped negative space, discovered second -->
+      <g fill="black">
+        <path d="
+          M 108 112
+          L 108 76
+          L 141 50
+          L 174 76
+          L 174 112
+          Z
+        "/>
+      </g>
+    </mask>
+  </defs>
+  <rect x="0" y="0" width="240" height="240" fill="#FFFFFF" mask="url(#letterMaskA)"/>
+</svg>
